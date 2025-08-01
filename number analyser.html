@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //a function that takes array of numbers and finds the largest and smallest numbers
+        function findLargestAndSmallest(numbers) {
+            let largest = numbers[0];
+            let smallest = numbers[0];
+            for (let i = 1; i < numbers.length; i++) {
+                if (numbers[i] > largest) {
+                    largest = numbers[i];
+                }
+                if (numbers[i] < smallest) {
+                    smallest = numbers[i];
+                }
+            }
+            return { largest, smallest };
+        }
+
+        //calculate the sum and  average of the numbers
+        function calculateSumAndAverage(numbers) {
+            let sum = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+            }
+            let average = sum / numbers.length;
+            return { sum, average };
+        }
+
+        //Use a for loop to iterate through an array
+        function iterateArray(numbers) {
+            for (let i = 0; i < numbers.length; i++) {
+                console.log(`Index ${i}: ${numbers[i]}`);
+            }
+        }
+
+        //Multiplication table for a given number example 5 multiplication table up to 12
+        function multiplicationTable(number) {
+            for (let i = 1; i <= 12; i++) {
+                console.log(`${number} x ${i} = ${number * i}`);
+            }
+        }
+
+        //Even and odd numbers in an array using loop
+        function separateEvenAndOdd(numbers) {  
+            let evenNumbers = [];
+            let oddNumbers = [];
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 === 0) {
+                    evenNumbers.push(numbers[i]);
+                } else {
+                    oddNumbers.push(numbers[i]);
+                }
+            }
+            return { evenNumbers, oddNumbers };
+        }
+        // Your JavaScript code goes here
+    </script>
+</body>
+</html>
