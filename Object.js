@@ -1,1 +1,13 @@
-
+let  numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    findLargestAndSmallest(numbers);
+    separateEvenAndOdd(numbers);
+    calculateSumAndAverage(numbers);
+    iterateArray(numbers);
+    multiplicationTable(5);
+    console.log(findLargestAndSmallest(numbers));
+    console.log(separateEvenAndOdd(numbers));
+    console.log(calculateSumAndAverage(numbers));
+    iterateArray(numbers);
+    multiplicationTable(5);
+    console.log(iterateArray(numbers));
+    console.log(multiplicationTable(5));
